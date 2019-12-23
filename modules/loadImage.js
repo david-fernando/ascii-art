@@ -2,7 +2,6 @@ const gm = require("gm");
 const fileSystem = require('fs')
 const fileList = require("../data/fileList.js")
 const converter = require("./convertToArray.js");
-const editImage = require("./editImages.js");
 
 let arrayOfObjects = converter.convertToArray(fileList.ready_images);
 
