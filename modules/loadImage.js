@@ -10,7 +10,7 @@ let subArray = arrayOfObjects.map((array, index)=>{return converter.convertToArr
 
 function loadFile(convertImagetoAscii){
 	return arrayOfObjects.map((array, index)=>{
-		return subArray[index].map((interanlArray, subIndex)=>{
+		return subArray[index].map((internalArray, subIndex)=>{
 			fileSystem.readFileSync(subArray[index][subIndex].url);
 			gm(subArray[index][subIndex].url)
 			.toBuffer('PNG',function (error, image) {
