@@ -9,9 +9,11 @@ if(checkFileExist.checkFileExistsSync()){
 	console.log("Saving images to referenced location ...")
 	editImage.edit();
 	setTimeout(function(){
+		[console.log("[\u2713] Saved images"),
 		(function load() {
 			console.log("Loading the images ...") 
-			loadImage.loadFile(image_to_ascii); })();
+			loadImage.loadFile(image_to_ascii); 
+		})()]
 	}, 4000);
 }
 
