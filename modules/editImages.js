@@ -7,7 +7,7 @@ let subArray = arrayOfObjects.map((array, index)=>{return converter.convertToArr
 
 function edit(){
 	return arrayOfObjects.map((array, index)=>{
-		return subArray[index].map((interanlArray, subIndex)=>{
+		return subArray[index].map((internalArray, subIndex)=>{
 			jimp.read(subArray[index][subIndex].url)
   		  	 .then(image => {
   	           return image
