@@ -1,5 +1,3 @@
-const converter = require("../modules/convertToArray.js");
-
 const fileList = {
 	unedited_images:{
 		laranja:{
